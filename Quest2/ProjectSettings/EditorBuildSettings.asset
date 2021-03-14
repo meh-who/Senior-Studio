@@ -11,9 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MyAssets/HandTest_Custom.unity
     guid: c884d076d6398b54492bcc64bbe30bf5
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyAssets/Breathing.unity
     guid: 921937d0e1c4f47f0a00968b901a7e30
+  - enabled: 0
+    path: Assets/MyAssets/Brain.unity
+    guid: cd0b07ea3255e43c9ac336f8c6d961a8
+  - enabled: 1
+    path: Assets/MyAssets/DistanceGrab 1.unity
+    guid: 504cb4d982ec02a48acca48c581d8e13
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 87399b643f8794064b97aa212c3fa10d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6b667a8a1ffcf482988061810d4a2b11, type: 2}

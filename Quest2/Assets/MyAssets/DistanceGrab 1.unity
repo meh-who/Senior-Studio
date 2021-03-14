@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasWithDebug
       objectReference: {fileID: 0}
+    - target: {fileID: 114372397652771654, guid: ddb963bcde7d8a04a88b3ee4709f46c7, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114778957838386506, guid: ddb963bcde7d8a04a88b3ee4709f46c7, type: 3}
       propertyPath: laserBeamBehavior
       value: 2
