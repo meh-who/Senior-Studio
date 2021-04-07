@@ -1496,6 +1496,11 @@ MonoBehaviour:
   m_maxGrabDistance: 0
   m_grabObjectsInLayer: 8
   m_obstructionLayer: 0
+<<<<<<< HEAD:test/Assets/MyAssets/Scenes/bedroom.unity
+=======
+<<<<<<< HEAD:test/Assets/MyAssets/Scenes/Breathing 1.unity
+=======
+>>>>>>> f978eee10b87743469b814c8ebdc37cfc7f1dd62:test/Assets/MyAssets/Scenes/Breathing 1.unity
 --- !u!1 &580048346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1576,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e10bbafb18aa5b4c88ec3def578e80e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:test/Assets/MyAssets/Scenes/bedroom.unity
+=======
+>>>>>>> parent of f6547b1 (Update bedroom.unity):test/Assets/MyAssets/Scenes/bedroom.unity
+>>>>>>> f978eee10b87743469b814c8ebdc37cfc7f1dd62:test/Assets/MyAssets/Scenes/Breathing 1.unity
 --- !u!1 &830740522
 GameObject:
   m_ObjectHideFlags: 0
