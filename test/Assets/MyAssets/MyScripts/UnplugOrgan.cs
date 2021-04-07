@@ -4,13 +4,13 @@ using UnityEngine;
 using OculusSampleFramework;
 
 
-    public class MaskManager : MonoBehaviour
+    public class UnplugOrgan : MonoBehaviour
     {
         public Transform parent;
         private DistanceGrabbable grabbable;
         private Transform trans;
         private Rigidbody rb;
-        private bool detached;
+        private bool lastGrabbing;
         
         // Start is called before the first frame update
         void Start()
@@ -18,24 +18,25 @@ using OculusSampleFramework;
             grabbable  = GetComponent<DistanceGrabbable>();
             transform.SetParent(parent);
             rb = GetComponent<Rigidbody>();
-            detached = false;
+            lastGrabbing = false;
         }
 
         // Update is called once per frame
         void Update()
         {
-            
+            //if grab the object
             bool grabbing = grabbable.isGrabbed;
             if (grabbing == true){
-                print(grabbing);
+                //print(grabbing);
                 gameObject.transform.SetParent(null);
-                //if (!detached) Detach();           
+                //rb.useGravity = false; //optional
+                lastGrabbing = grabbing;              
             }
-        }
+            //if drop the object
+            if (lastGrabbing==true && grabbing ==false) {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
 
-        void Detach(){
-            gameObject.transform.SetParent(null);
-            rb.isKinematic = false;
-            detached = true;
         }
     }
