@@ -5,6 +5,8 @@ using UnityEngine;
 public class KinematicsManager : MonoBehaviour
 {
     private bool brainOn = true;
+    public Transform parent;
+
     //Moves this GameObject 2 units a second in the forward direction
     void Update()
     {
@@ -19,6 +21,7 @@ public class KinematicsManager : MonoBehaviour
             Rigidbody CamRb = other.GetComponent<Rigidbody>();
             CamRb.isKinematic = true;
             CamRb.useGravity = false;
+            transform.SetParent(parent);
             print("I put the camera on!");
         }
 
