@@ -1474,8 +1474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTime: 0
-  fadeColor: {r: 1, g: 0.6556604, b: 0.7181974, a: 1}
-  fadeOnStart: 1
+  fadeColor: {r: 0.121568635, g: 0.73333335, b: 0.019607844, a: 1}
+  fadeOnStart: 0
   renderQueue: 5000
 --- !u!20 &205262705
 Camera:
@@ -2569,6 +2569,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5080731651295093379, guid: 51b520140e777479fa2c62a26ca0cd5c, type: 3}
+--- !u!114 &1210545849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210545847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &1228972564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3273,10 +3290,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663872275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e10bbafb18aa5b4c88ec3def578e80e, type: 3}
+  m_Script: {fileID: 11500000, guid: e3854d9cb6c0bab4caa8e3e0a5d33e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 205262702}
+  compTxt: {fileID: 1228972566}
 --- !u!136 &1663872278
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3287,10 +3305,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.116843924
+  m_Radius: 0.05023309
   m_Height: 0.3363074
   m_Direction: 1
-  m_Center: {x: 8.396846e-12, y: 0.3318411, z: 0.015427812}
+  m_Center: {x: -0.00000007345308, y: 0.3318411, z: -0.07240784}
 --- !u!1001 &1813816480
 PrefabInstance:
   m_ObjectHideFlags: 0
