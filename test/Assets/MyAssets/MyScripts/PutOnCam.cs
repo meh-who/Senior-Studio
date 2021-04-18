@@ -30,6 +30,8 @@ public class PutOnCam : MonoBehaviour
             compTxt.text = "welcome.";
 
             print("I put the camera on!");
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Breathing");
         }
 
     }
