@@ -9,6 +9,8 @@ public class PutOnCam : MonoBehaviour
     private bool brainOn = true;
     public Transform parent;
     public TMP_Text compTxt;
+
+    public OVRScreenFade screenFade;
     
 
     //Moves this GameObject 2 units a second in the forward direction
@@ -31,9 +33,21 @@ public class PutOnCam : MonoBehaviour
 
             print("I put the camera on!");
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Breathing");
+            StartCoroutine(ChangeScene(2.0f,4.0f,0.5f));
         }
 
+    }
+
+    public IEnumerator ChangeScene(float waitT, float transT, float stayT)
+    {
+        yield return new WaitForSeconds(waitT);
+        screenFade.FadeOut();
+
+        yield return new WaitForSeconds(transT);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Breathing");
+
+        yield return new WaitForSeconds(stayT);
+        // screenFade.FadeOut();
     }
 
     // private void OnTriggerStay(Collider other)
