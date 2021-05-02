@@ -8,6 +8,7 @@ public class Rotater : MonoBehaviour
 {
 
     [SerializeField] private float _duration = 1.5f;
+     [SerializeField] private float _degree = 45f;
     [SerializeField] private Ease _ease = Ease.Linear;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class Rotater : MonoBehaviour
 
     public void RotateBridge(){
         var curRotZ = transform.rotation.z;
-        transform.DORotate(new Vector3(0, curRotZ + 30, 0), _duration)
+        transform.DORotate(new Vector3(0, curRotZ + _degree, 0), _duration)
         .SetRelative()
         .SetEase(_ease);
     }
