@@ -1,4 +1,3 @@
-using DG.Tweening;
 using UnityEngine;
 using System.Collections;
  
@@ -8,8 +7,6 @@ public class Float : MonoBehaviour {
     public float degreesPerSecond = 15.0f;
     public float amplitude = 0.5f;
     public float frequency = 1f;
-
-    public float scale = 1f;
  
     // Position Storage Variables
     Vector3 posOffset = new Vector3 ();
@@ -29,10 +26,7 @@ public class Float : MonoBehaviour {
         // Float up/down with a Sin()
         tempPos = posOffset;
         tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * frequency) * amplitude;
+ 
         transform.position = tempPos;
-    }
-
-    public void Scaleup(){
-        transform.DOScale(scale, 1.5f);
     }
 }
