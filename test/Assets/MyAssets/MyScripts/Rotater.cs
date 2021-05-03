@@ -31,8 +31,8 @@ public class Rotater : MonoBehaviour
         // if (_rotateTween == null)
 	    // {
             Debug.Log(newZ);
-		    _rotateTween = transform.DORotate(new Vector3(0, newZ, 0), _duration);
-            newZ += 45;
+		    _rotateTween = transform.DORotate(new Vector3(0, 270, 0), _duration);
+            newZ += 90;
 	    // }
 	    // else
 	    // {

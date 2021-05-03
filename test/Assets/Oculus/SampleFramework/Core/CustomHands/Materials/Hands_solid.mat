@@ -8,14 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hands_solid
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8aba22c2208aff640a2fdc9a5e45a9dd, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -99,18 +98,22 @@ Material:
     - _FadeEnd: 0.5
     - _FadeStart: 0.5
     - _Fresnel: 0
+    - _FresnelPower: 0.16
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HandAlpha: 1
     - _Intensity: 0.5
     - _InvFade: 1
     - _Metallic: 0
+    - _MinVisibleAlpha: 0.15
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OutlineWidth: 0.005
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _RimFactor: 0.65
     - _Shininess: 0.75
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -124,6 +127,9 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorBottom: {r: 0.509434, g: 0.27109, b: 0.22828409, a: 1}
+    - _ColorPrimary: {r: 0.4811321, g: 0.34269315, b: 0.40606177, a: 1}
+    - _ColorTop: {r: 1, g: 0.3915094, b: 0.3915094, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MyColor: {r: 0.87058824, g: 0.87058824, b: 0.87058824, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
