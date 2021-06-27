@@ -127,9 +127,9 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorBottom: {r: 0.509434, g: 0.27109, b: 0.22828409, a: 1}
-    - _ColorPrimary: {r: 0.4811321, g: 0.34269315, b: 0.40606177, a: 1}
-    - _ColorTop: {r: 1, g: 0.3915094, b: 0.3915094, a: 1}
+    - _ColorBottom: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+    - _ColorPrimary: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
+    - _ColorTop: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MyColor: {r: 0.87058824, g: 0.87058824, b: 0.87058824, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
